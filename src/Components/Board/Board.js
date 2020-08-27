@@ -67,14 +67,14 @@ class Board extends Component {
         return;
     }
     checkWon() {
-        console.log(this.state, "checkwon");
+        // console.log(this.state, "checkwon");
         const temp = this.state;
         for (let i = 0; i <= 7; i++) {
             const win = temp.winConditions[i];
             let a = temp.game[win[0]];
             let b = temp.game[win[1]];
             let c = temp.game[win[2]];
-            console.log(a,b,c ,"win conditions")
+            // console.log(a,b,c ,"win conditions")
             
             if (a === '' || b === '' || c === '') {
                 continue;
@@ -82,7 +82,7 @@ class Board extends Component {
             if (a === b && b === c) {
                 temp.gameWon =true;
                 this.setState({ gameWon: temp.gameWon })
-                console.log(this.state.gameWon);
+                // console.log(this.state.gameWon);
                 break
             }
         }
