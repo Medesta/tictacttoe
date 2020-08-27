@@ -17,7 +17,7 @@ const Tile = (props) => {
         return (
             <button onClick={props.click} className="tile red" disabled>
                 <svg height="100"  width="100">
-                    <circle cx="35" cy="45" r="15" stroke="black" strokeWidth="10" fill="transparent" />
+                    <circle cx="35" cy="45" r="15"  strokeWidth="10" fill="transparent" />
                 </svg>
             </button>
 
